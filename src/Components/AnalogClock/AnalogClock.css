@@ -1,0 +1,74 @@
+.analog-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.analog-clock__hour-hand {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 4px;
+    height: 40px;
+    margin-left: -2px;
+    background: #222;
+    transform-origin: 50% 40px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transition: all 0.5s;
+}
+
+.analog-clock__minute-hand {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 4px;
+    height: 80px;
+    margin-left: -2px;
+    background: #333;
+    border-radius: 50% 50% 0 0;
+    transform-origin: 50% 80px;
+    transition: all 0.1s;
+}
+
+.analog-clock__second-hand {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 2px;
+    height: 120px;
+    margin-left: -1px;
+    background: gray;
+    border-radius: 50% 50% 0 0;
+    transform-origin: 50% 90px;
+}
+
+.analog-clock__label {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 10px;
+    margin-top: 10px;
+    background: #666;
+    margin-left: -2px;
+    transform-origin: 50% 90px;
+}
+
+.analog-clock__dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: auto;
+    z-index: 10;
+    box-shadow: 0 2px 4px -1px black;
+}

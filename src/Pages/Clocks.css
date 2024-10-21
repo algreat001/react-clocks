@@ -1,0 +1,9 @@
+.clocks-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 12px;
+}

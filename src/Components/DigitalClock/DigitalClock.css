@@ -1,0 +1,16 @@
+.digital-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: forestgreen;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+}
