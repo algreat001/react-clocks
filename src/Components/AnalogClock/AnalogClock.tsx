@@ -1,11 +1,11 @@
 import React from 'react';
 
 import {ClockItem} from "@/Models/ClockItem";
+import {timeToAngle} from "@/Helpers/time";
 
 import ClockFace from "@/Components/AnalogClock/ClockFace";
 
 import './AnalogClock.css';
-import {timeToAngle} from "@/Helpers/time";
 
 export interface AnalogClockProps {
   clock: ClockItem;

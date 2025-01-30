@@ -1,10 +1,10 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
 
 import {ClockItem, timeZones} from "@/Models/ClockItem";
+import {changeTimeZone} from "@/Stores/clockSlice";
 
 import './SelectTimeZone.css';
-import {useDispatch} from "react-redux";
-import {changeTimeZone} from "@/Stores/clockSlice";
 
 
 interface SelectTimeZoneProps {

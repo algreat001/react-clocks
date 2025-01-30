@@ -35,7 +35,7 @@ const clocksSlice = createSlice({
       state.clocks = state.clocks.filter(clock => clock.id !== action.payload.id)
     },
     updateTime(state, action) {
-      state.clocks = state.clocks.map(cl => cl.update());
+      state.clocks = state.clocks.map(clock => clock.update());
     },
     changeTimeZone(state, action) {
       const clock = state.clocks.find(clock => clock.id === action.payload.id)

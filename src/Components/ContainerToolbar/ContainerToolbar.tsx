@@ -1,12 +1,12 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
+
+import {clockAdd, clockRemove} from "@/Stores/clockSlice";
 
 import './ContainerToolbar.css';
-import {clockAdd, clockRemove} from "@/Stores/clockSlice";
-import {useDispatch} from "react-redux";
 
 interface ContainerToolbarProps {
   id: string
-  visible: boolean;
 }
 
 const ContainerToolbar = (props: ContainerToolbarProps) => {
@@ -20,7 +20,7 @@ const ContainerToolbar = (props: ContainerToolbarProps) => {
   }
 
   return (
-    <div className="container-toolbar" style={{opacity: props.visible ? '1.0' : '0.0'}}>
+    <div className="container-toolbar">
       <button title='Добавить часы' onClick={onAdd}>+</button>
       <button title='Удалить часы' onClick={onRemove}>-</button>
     </div>
