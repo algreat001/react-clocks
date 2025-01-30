@@ -1,4 +1,4 @@
-import {Time, timeToAngle, TimeZone} from "@/Helpers/time";
+import {Time, TimeZone} from "@/Helpers/time";
 
 import tz from '@/timezones.json';
 
@@ -44,11 +44,6 @@ export class ClockItem {
     const delimiter = this.time.seconds % 2 === 0 ? ":" : ".";
     return `${ClockItem.padTime(this.time.hours)}:${ClockItem.padTime(this.time.minutes)}${delimiter}${ClockItem.padTime(this.time.seconds)}`;
   }
-
-  getAngleTime(): Time {
-    return timeToAngle(this.time);
-  }
-
 
   changeTimeZone(timezone: string) {
     const newTimezone =  timeZones.find(tz => tz.timezone === timezone) as TimeZone;

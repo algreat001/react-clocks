@@ -5,13 +5,14 @@ import {ClockItem} from "@/Models/ClockItem";
 import ClockFace from "@/Components/AnalogClock/ClockFace";
 
 import './AnalogClock.css';
+import {timeToAngle} from "@/Helpers/time";
 
 export interface AnalogClockProps {
   clock: ClockItem;
 }
 
 const AnalogClock = (props: AnalogClockProps) => {
-  const angles = props.clock.getAngleTime();
+  const angles = timeToAngle(props.clock.time);
 
   return (
     <div className="analog-clock">
